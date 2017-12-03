@@ -1,0 +1,15 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    background-color:#222;
+}
+
+#textbox{
+	margin: 0 auto;
+	color: #fff;
+	font-size: 3em;
+	text-align: center;
+}
