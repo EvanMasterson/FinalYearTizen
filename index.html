@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Tizen Wearable"/>
 
     <title>Tizen Wearable</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
-	<script src="js/main.js"></script>
-</head>
-
-<body>
-  <div id=textbox></div>
-</body>
-<script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+	<script>
 	// Initialize Firebase
 	var config = {
 	  apiKey: "AIzaSyDXvhZiiEiIpnuZh__mi1Ko1o7CY5hekwU",
@@ -28,4 +24,15 @@
 	};
 	firebase.initializeApp(config);
 </script>
+</head>
+
+<body>
+	<form id="signin">
+		<input type="email" name="Email" placeholder="Email here" id="email"></br>
+		<input type="password" name="Password" placeholder="Password here" id="password"></br>
+	  	<input type="button" value="Submit" onclick="signin()">
+	</form>
+  	<div id=textbox></div>
+  	<button id="signout" onclick="signout()">Signout</button>
+</body>
 </html>
