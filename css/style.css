@@ -13,3 +13,11 @@ body {
 	font-size: 3em;
 	text-align: center;
 }
+
+.menu {
+	height: 150px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2em;
+}
